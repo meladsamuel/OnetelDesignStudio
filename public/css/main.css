@@ -1,0 +1,258 @@
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: #101010;
+    color: white;
+    width: 100%;
+    height: 100%;
+}
+
+.nav-fixed {
+    position: fixed;
+    top: 0;
+    z-index: 9999999;
+    width: 100%;
+}
+
+.nav {
+    background-color: #202020;
+    border-left: solid 4px #D54AB6;
+    width: 100%;
+    color: #fafafacb;
+}
+
+nav ul a {
+    padding: 18px;
+    display: inline-block;
+    font-weight: lighter;
+}
+
+nav ul a:hover {
+    background-color: #333333;
+}
+
+/* ###################################################################################
+   ##############################  slideshow by melad   ####################################
+   ###################################################################################
+*/
+.slider-container {
+    margin: 30px auto 0 auto;
+    position: relative;
+    overflow: hidden;
+    user-select: none;
+    padding-top: 52.77%;
+    z-index: -1;
+}
+
+.slider-content img {
+    vertical-align: middle;
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    transition: all 3s ease-in-out;
+}
+
+.slider-container img {
+    width: 100%;
+}
+
+.slider-container img.active {
+    opacity: 1;
+}
+
+.slide-prev,
+.slide-next {
+    opacity: .3;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    font-size: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+.slide-prev {
+    left: 10px;
+}
+
+.slide-next {
+    right: 10px;
+}
+
+.slide-next-ar:hover,
+.slide-next:hover,
+.slide-prev-ar:hover,
+.slide-prev:hover {
+    opacity: 1;
+}
+
+.slide-control {
+    text-align: center;
+}
+
+.slide-number {
+    padding: 16px 0;
+    color: white;
+    z-index: 2;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    font-size: 2rem;
+    font-weight: 300;
+    left: 60%;
+    transform: translate(-50%, -50%);
+}
+
+.slide-control .indicators {
+    position: absolute;
+    left: 10%;
+    top: 30px;
+    z-index: 2;
+    width: 80%;
+}
+
+.indicators ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: none
+}
+
+.indicators ul li {
+    display: inline-block;
+    padding: 0 12px;
+    cursor: pointer;
+    background: #fff;
+    text-align: center;
+    height: 1px;
+    overflow: hidden;
+    border-radius: 1px 1px 4px 4px;
+    transition: all 1s ease-in-out;
+    margin: 0 3px;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.1);
+}
+
+.indicators ul li.active,
+.indicators ul li:hover {
+    background-color: #79797959;
+    color: #fff;
+    height: 50px;
+}
+
+/* ################################################################################### */
+.pull-top {
+    margin-top: -30px;
+}
+
+.push-top {
+    margin-top: 60px;
+}
+
+.box {
+    padding: 30px;
+    margin: 0 5px 10px;
+    text-align: center;
+}
+
+.icon-wrapper {
+    border: solid 2px #ffffff;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    position: relative;
+}
+
+.background1 {
+    background-color: #C14000;
+}
+
+.background2 {
+    background-color: #009988;
+}
+
+.background3 {
+    background-color: #FFB826;
+}
+
+.padding {
+    padding: 15px;
+}
+
+.business {
+    margin: 60px 0;
+    background-color: #191919;
+
+}
+
+.cover {
+    padding: 0 !important;
+}
+
+.business img {
+    width: 100%;
+}
+
+.business p,
+.recent-project p {
+    color: #fafafad2;
+}
+
+.recent-project {
+    text-align: center;
+}
+
+
+.light-box div {
+    padding: 0;
+    margin: 0;
+    height: 250px;
+}
+
+.light-box img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.img-overlay {
+    transition: box-shadow .3s ease;
+    pointer-events: none;
+}
+
+.light-box img:hover+.img-overlay {
+    box-shadow: inset 0 -80px 150px 0 #000000
+}
+
+.light-box-view {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999999;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.95);
+    display: none;
+}
+
+.light-box-view img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+}
+
+.light-box-view .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 15px;
+}

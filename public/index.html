@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Internship</title>
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <!-- start navigation bar -->
+    <nav class="nav-fixed">
+        <div class="container">
+            <div class="nav">
+                <ul class="list-unstyled list-inline align-end">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html">about us</a></li>
+                    <li><a href="index.html">portfolio</a></li>
+                    <li><a href="index.html">contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- start slideShow -->
+    <div class="slider-container">
+        <div class="slider-content">
+            <!-- here you will be add the image link  -->
+            <img src="image/welcome.jpg" alt="Welcome Onelet Design Studio">
+            <img src="image/backgound2.jpg" alt="Desgin Profissional">
+        </div>
+        <div class="slide-control">
+            <span id="slide-prev" class="slide-prev"><i class="fas fa-angle-left fa-fw"></i></span>
+            <span id="indicators" class="indicators"></span>
+            <span id="slide-next" class="slide-next"><i class="fas fa-angle-right fa-fw"></i></span>
+        </div>
+        <div class="slider-topic">
+            <div id="slide-number" class="slide-number"><br></div>
+        </div>
+    </div>
+    <!-- start cards container -->
+    <div class="container pull-top">
+        <div class="row">
+            <div class="col-sm-12 col-md-4">
+                <div class="box background1">
+                    <div class="icon-wrapper center-block">
+                        <i class="fas fa-laptop fa-3x center-center"></i>
+                    </div>
+                    <h2>Responsive</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et dolore magna aliqua.
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <div class="box background2">
+                    <div class="icon-wrapper center-block">
+                        <i class="fas fa-mobile-alt fa-3x center-center"></i>
+                    </div>
+                    <h2>Easy to us</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et dolore magna aliqua.
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <div class="box background3">
+                    <div class="icon-wrapper center-block">
+                        <i class="far fa-life-ring fa-3x center-center"></i>
+                    </div>
+                    <h2>Quick support</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et dolore magna aliqua.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="business row ">
+            <div class="col-sm-12 col-md-6 cover">
+                <img src="image/startup.jpg" alt="startup business" width="100%">
+            </div>
+            <div class="col-sm-12 col-md-6 padding">
+                <h2>Startup business</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip
+                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                    dolore eu
+                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.</p>
+            </div>
+        </div>
+    </div>
+    <div class="recent-project container">
+        <h2>Recent Project</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo consequat. </p>
+        <div id="light-box" class="light-box">
+            <div class="col-sm-6 col-md-4">
+                <img src="image/drawing-933207_1920.jpg" alt="drawing">
+                <div class="overlay img-overlay"></div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <img src="image/idea-1876659_1920.jpg" alt="idea">
+                <div class="overlay img-overlay"></div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <img src="image/work-1515801_1920.jpg" alt="work">
+                <div class="overlay img-overlay"></div>
+            </div>
+            <div class="col-sm-4 col-md-3">
+                <img src="image/student-849822_1920.jpg" alt="student">
+                <div class="overlay img-overlay"></div>
+            </div>
+            <div class="col-sm-4 col-md-3">
+                <img src="image/work-5382501_1920.jpg" alt="work">
+                <div class="overlay img-overlay"></div>
+            </div>
+            <div class="col-sm-4 col-md-3">
+                <img src="image/startup-849804_1920.jpg" alt="startup 2">
+                <div class="overlay img-overlay"></div>
+            </div>
+            <div class="col-sm-4 col-md-3">
+                <img src="image/startup-594090_1920.jpg" alt="startup 3">
+                <div class="overlay img-overlay"></div>
+            </div>
+        </div>
+        <div id="light-box-view" class="light-box-view">
+            <div id="light-box-body" class="container"></div>
+            <i id="light-box-close" class="fa fa-times fa-2x close"></i>
+            <div id="light-box-controller">
+                <span onclick="nextImage()" id="light-box-next" class="slide-next"><i
+                        class="fas fa-angle-right fa-fw"></i></span>
+                <span onclick="previousImage()" id="light-box-prev" class="slide-prev"><i
+                        class="fas fa-angle-left fa-fw"></i></span>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/slideShow.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
